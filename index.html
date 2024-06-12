@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-900 bg-opacity-75">
+    <main
+      class="w-[530px] h-full bg-white bg-opacity-90 p-8 rounded-xl shadow-lg"
+    >
+      <h1 class="font-extrabold text-2xl text-center text-gray-800 mb-6">
+        SIMPLE NOTE
+      </h1>
+      <form id="formInput" class="flex flex-col gap-4">
+        <label for="catatan" class="font-semibold text-gray-700">Note :</label>
+        <textarea
+          id="catatan"
+          class="min-h-36 p-4 border border-gray-500 rounded-lg focus:ring-2 focus:ring-red-300 outline-none"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-red-500 text-white py-4 rounded-lg font-semibold hover:bg-red-600 transition duration-300"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="notesContainer" class="mt-8 space-y-4"></div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
